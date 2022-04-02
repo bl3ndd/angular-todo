@@ -1,0 +1,15 @@
+<div class="task">
+  <div class="task__wrap">
+    <p class="task__text">
+      {{ task.text }}
+    </p>
+    <p class="task__text">
+      {{ task.date }}
+    </p>
+  </div>
+  <fa-icon
+    (click)="onDelete(task.id)"
+    class="task__icon"
+    [icon]="faTimes"
+  ></fa-icon>
+</div>
